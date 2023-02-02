@@ -11,8 +11,6 @@ Algorithmic tasks in Python
 
 [![Python][Python.io]][Python-url]
 
-
-
 ## 1. Introduction to Algorithms
 
 [contest.yandex.ru](https://contest.yandex.ru/contest/23389/problems/)
@@ -630,6 +628,60 @@ None
 
 ------
 
+<details>
+<summary>
+<b>Limited queue(<a href="basic_data_structures/limited_queue.py">limited_queue.py</a>)</b>
+</summary>
+
+#### Description
+
+Astrologers have announced a day of limited queues. Timofey needs to write a MyQueueSized class that takes a max_size
+parameter, which means the maximum allowable number of elements in the queue.
+
+Help him - implement a program that will emulate the operation of such a queue. The functions to be supported are
+described in the input format.
+
+#### Enter form
+
+The first line contains one number — the number of commands, it does not exceed 5000.
+The second line specifies the maximum allowable queue size, it does not exceed 5000.
+The commands follow, one per line. Commands can be of the following types:
+
+push(x) - add the number x to the queue;
+pop() - remove a number from the queue and print;
+peek() - print the first number in the queue;
+size() - return the size of the queue;
+If the allowed queue size is exceeded, "error" should be displayed. When calling the pop() or peek() operations on an empty queue, output "None".
+
+#### Expected output
+
+Print the results of the desired commands, one per line.
+
+#### Example
+
+Enter:  
+8  
+2  
+peek  
+push 5  
+push 2  
+peek  
+size  
+size  
+push 1  
+size  
+
+Output:  
+None  
+5  
+2  
+2  
+error  
+2
+
+</details>
+
+------
 
 
 <!-- MARKDOWN LINKS & IMAGES -->
