@@ -636,7 +636,7 @@ None
 
 [dependency-shield]: https://img.shields.io/badge/Dependency_Graph-darkgreen?style=for-the-badge
 
-[dependency-url]: https://github.com/Lesash13/api_python_app/network/dependencies
+[dependency-url]: https://github.com/Lesash13/algoritms/network/dependencies
 
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=darkblue
 
