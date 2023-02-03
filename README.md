@@ -556,7 +556,7 @@ The function should print the elements of the list, one per line.
 
 <details>
 <summary>
-<b>Unloves task (<a href="basic_data_structures/unloved_task.py">unloved_task.py</a>)</b>
+<b>Unloved task (<a href="basic_data_structures/unloved_task.py">unloved_task.py</a>)</b>
 </summary>
 
 #### Description
@@ -651,7 +651,8 @@ push(x) - add the number x to the queue;
 pop() - remove a number from the queue and print;
 peek() - print the first number in the queue;
 size() - return the size of the queue;
-If the allowed queue size is exceeded, "error" should be displayed. When calling the pop() or peek() operations on an empty queue, output "None".
+If the allowed queue size is exceeded, "error" should be displayed. When calling the pop() or peek() operations on an
+empty queue, output "None".
 
 #### Expected output
 
@@ -669,7 +670,7 @@ peek
 size  
 size  
 push 1  
-size  
+size
 
 Output:  
 None  
@@ -683,6 +684,88 @@ error
 
 ------
 
+<details>
+<summary>
+<b>List queue(<a href="basic_data_structures/list_queue.py">list_queue.py</a>)</b>
+</summary>
+
+#### Description
+
+Timothy's favorite variant of a queue is a queue written using a linked list. Help him make it happen. The queue must
+support the execution of three commands:
+
+get() - get the element at the head of the queue and remove it. If the queue is empty, print "error".
+put(x) - add the number x to the queue
+size() - display the current size of the queue
+
+#### Enter form
+
+The first line contains the number of commands n — an integer not exceeding 1000. Each of the next n lines contains
+commands one line at a time.
+
+#### Expected output
+
+Print the answer to each query, one per line.
+
+#### Example
+
+Enter:  
+10  
+put -34  
+put -23  
+get  
+size  
+get  
+size  
+get  
+get  
+put 80  
+size
+
+Output:  
+-34  
+1  
+-23  
+0  
+error  
+error  
+1
+
+</details>
+
+------
+
+<details>
+<summary>
+<b>Fibonachhi(<a href="basic_data_structures/fibonachhi.py">fibonachhi.py</a>)</b>
+</summary>
+
+#### Description
+
+Timothy had n (0≤n≤32) trainees. Each trainee wanted to be better than their predecessors, so
+the i-trainee made as many commits as the sum of the previous two trainees. The first two interns were less proactive -
+they made one commit each.
+Let Fi - number of commits made i-trainee (trainees are numbered from zero). Then the following is done:
+F0=F1=1. For all i≥2 it will be Fi=F(i−1)+F(i−2).Determine how much code the next intern will write - find Fn.
+The solution must be implemented recursively.
+
+#### Enter form
+
+The input is n - is an integer in the range 0-32.
+
+#### Expected output
+
+Need to withdraw Fn.
+
+#### Example
+
+Enter:  5
+
+Output:  8
+
+</details>
+
+------
 
 <!-- MARKDOWN LINKS & IMAGES -->
 
