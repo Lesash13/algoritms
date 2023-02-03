@@ -1,7 +1,9 @@
-# ID = 81738655
+# ID = 81771281
+from typing import List
 
-def count_index(length, street, zero_indexes) -> list:
-    res: list = []
+
+def count_index(length, street, zero_indexes) -> List[int]:
+    res: List[int] = []
     previous_value_res: int = 0
     for i in range(0, length):
         if street[i] == 0:
@@ -23,13 +25,13 @@ def count_index(length, street, zero_indexes) -> list:
     return res
 
 
-def zero_index_list(street: list) -> list:
+def zero_index_list(street: List[int]) -> List[int]:
     return [i for i, val in enumerate(street) if val == 0]
 
 
 def main() -> None:
     length: int = int(input())
-    street: list = list(map(int, input().split()))
+    street: List[int] = [int(i) for i in input().split()]
     print(*count_index(length, street, zero_index_list(street)), sep=" ")
 
 
