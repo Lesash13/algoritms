@@ -767,6 +767,66 @@ Output:  8
 
 ------
 
+## 3. Basic data structures final tasks
+
+[contest.yandex.ru](https://contest.yandex.ru/contest/23759/problems)
+
+---
+
+<details>
+<summary>
+<b>Deck (<a href="basic_data_structures_final_tasks/deck.py">deck.py</a>)</b>
+</summary>
+
+#### Description
+
+Gosha implemented the Dec data structure, the maximum size of which is determined by a given number. Methods push_back(
+x), push_front(x), pop_back(), pop_front() worked correctly. But, if there were many elements in the deck, the program
+worked for a very long time. The fact is that not all operations were performed in O(1). Help Gosh! Write an efficient
+implementation.
+
+Attention: when implementing, use a ring buffer.
+
+#### Enter form
+
+The first line contains the number of commands n — an integer not exceeding 100000. The second line contains the number
+m — the maximum deque size. It does not exceed 50000. The next n lines contain one of the commands:
+
+push_back(value) - add an element to the end of the deque. If the deque already contains the maximum number of elements,
+print "error".  
+push_front(value) - add an element to the front of the deque. If the deque already contains the maximum number of
+elements, print "error".  
+pop_front() - Display the first element of the deque and remove it. If deque was empty, print "error".  
+pop_back() - print the last element of the deque and remove it. If deque was empty, print "error".
+Value is an integer, modulo not exceeding 1000.
+
+#### Expected output
+
+Print the result of each command on a separate line. No output is required for successful push_back(x) and push_front(x)
+requests.
+
+#### Example
+
+Enter:  
+7  
+10  
+push_front -855  
+push_front 0  
+pop_back  
+pop_back  
+push_back 844  
+pop_back  
+push_back 823
+
+Output:  
+-855  
+0  
+844
+
+</details>
+
+------
+
 <!-- MARKDOWN LINKS & IMAGES -->
 
 [dependency-shield]: https://img.shields.io/badge/Dependency_Graph-darkgreen?style=for-the-badge
