@@ -775,7 +775,7 @@ Output:  8
 
 <details>
 <summary>
-<b>Deck (<a href="basic_data_structures_final_tasks/deck.py">deck.py</a>)</b>
+<b>Deck (<a href="basic_data_structures_final_tasks/deque.py">deck.py</a>)</b>
 </summary>
 
 #### Description
