@@ -775,7 +775,7 @@ Output:  8
 
 <details>
 <summary>
-<b>Deck (<a href="basic_data_structures_final_tasks/deque.py">deck.py</a>)</b>
+<b>Deque (<a href="basic_data_structures_final_tasks/deque.py">deque.py</a>)</b>
 </summary>
 
 #### Description
@@ -904,6 +904,294 @@ Output: 38
 </details>
 
 ------
+
+## 4. Recursion and sorting
+
+[contest.yandex.ru](https://contest.yandex.ru/contest/24734/problems/)
+
+---
+
+<details>
+<summary>
+<b>Combinations (<a href="recursion_sorting/combinations.py">combinations.py</a>)</b>
+</summary>
+
+#### Description
+
+On the keyboard of old mobile phones, each number corresponded to several letters. Like that:
+
+2:'abc',  
+3:'def',  
+4:'ghi',  
+5:'jkl',  
+6:'mno',  
+7:'pqrs',  
+8:'tuv',  
+9:'wxyz'
+
+You know in what order the phone buttons were pressed, excluding repetitions. Type all combinations of letters that can
+be typed in such a sequence of clicks.
+
+#### Enter form
+
+The input is a string consisting of numbers 2-9 inclusive. The string length does not exceed 10 characters.
+
+#### Expected output
+
+Output all possible combinations of letters separated by spaces.
+
+#### Example
+
+Enter: 23
+
+Output: ad ae af bd be bf cd ce cf
+
+
+</details>
+
+------
+
+<details>
+<summary>
+<b>Houses (<a href="recursion_sorting/houses.py">houses.py</a>)</b>
+</summary>
+
+#### Description
+
+Timofey decided to buy several houses in the famous Algos archipelago among developers. He found n ads for sale, where
+the cost of each house is indicated in Algos francs. And Timothy has k francs. Help him determine what is the largest
+number of houses on the Algos he can buy for this money.
+
+#### Enter form
+
+The first line contains space-separated natural numbers n and k.
+
+n is the number of houses that Timofey considers, it does not exceed 100,000;
+
+k - total budget, does not exceed 100000;
+
+The next line contains n house prices separated by a space. Each of the numbers does not exceed 100000. All values are
+natural numbers.
+
+#### Expected output
+
+Print a single number — the maximum number of houses that Timothy can buy.
+
+#### Example
+
+Enter:  
+3 1000  
+350 999 200
+
+Output: 2
+
+</details>
+
+------
+
+<details>
+<summary>
+<b>Triangle Perimeter (<a href="recursion_sorting/triangle.py">triangle.py</a>)</b>
+</summary>
+
+#### Description
+
+Before going to bed, Rita decided to play a game on her phone. An array of integers is given, in which each element
+represents the length of a side of a triangle. It is necessary to determine the maximum possible perimeter of a triangle
+made up of sides with lengths from a given array. Help Rita finish the game as soon as possible and go to bed.
+
+Recall that three segments with lengths a ≤ b ≤ c can form a triangle if the triangle inequality holds: c < a + b
+
+Let's take an example:
+given the lengths of the sides 6, 3, 3, 2. Let's try to choose 6 as the largest side. The triangle inequality cannot be
+satisfied, since 3, 3, 2 are left - the maximum sum of them is 6.
+
+Without the six, the remaining three segments already form a triangle with sides 3, 3, 2.
+The inequality is true: 3 < 3+ 2. The perimeter is 3 + 3 + 2 = 8.
+
+#### Enter form
+
+The first line contains the number of segments n, 3≤ n≤ 10000.
+
+The second line contains n non-negative numbers not exceeding 10,000, the lengths of the segments.
+
+#### Expected output
+
+You need to print one number - the largest perimeter of the triangle.
+
+It is guaranteed that there is always a triple of numbers that can form a triangle.
+
+#### Example
+
+Enter:  
+4  
+6 3 3 2
+
+Output: 8
+
+</details>
+
+------
+
+<details>
+<summary>
+<b>Wardrobe (<a href="recursion_sorting/wardrobe.py">wardrobe.py</a>)</b>
+</summary>
+
+#### Description
+
+Rita decided to keep only three colors of clothes: pink, yellow and crimson. With the other colors out of the way, Rita
+wanted to sort her new wardrobe by color. First, things should go pink, then - yellow, and at the end - raspberry. Help
+Rita cope with this task.
+
+#### Enter form
+
+The first line contains the number of items in the wardrobe: n - it does not exceed 1000000. The second line contains an
+array that specifies the color for each item. Pink is 0, yellow is 1, magenta is 2.
+
+#### Expected output
+
+It is necessary to output the colors of objects in the correct order, separated by a space.
+
+#### Example
+
+Enter:  
+7  
+0 2 1 2 0 0 1
+
+Output: 0 0 0 1 1 2 2
+
+</details>
+
+------
+
+<details>
+<summary>
+<b>Big number (<a href="recursion_sorting/biggest.py">biggest.py</a>)</b>
+</summary>
+
+#### Description
+
+In the evening, the guys decided to play the game "Big Number".
+Numbers are given. It is necessary to determine what is the largest number that can be formed from them.
+
+#### Enter form
+
+The first line contains n — the number of numbers. It does not exceed 100.
+The second line contains n space-separated non-negative numbers, each of which does not exceed 1000.
+
+#### Expected output
+
+You need to print the largest number that can be made from the given numbers.
+
+#### Example
+
+Enter:  
+3  
+15 56 2
+
+Output: 56215
+
+</details>
+
+------
+
+<details>
+<summary>
+<b>Bubble (<a href="recursion_sorting/bubbles.py">bubbles.py</a>)</b>
+</summary>
+
+#### Description
+
+At each iteration, we go through the array, comparing pairs of adjacent elements in turn. If the element at position i
+is greater than the element at position i + 1, swap them. After the first iteration, the largest element will pop up at
+the end of the array.
+
+We go through the array, performing the specified actions until, at the next iteration, it turns out that the exchanges
+are no longer needed, that is, the array has already been sorted.
+
+After no more than n – 1 iterations, the execution of the algorithm ends, since at each iteration at least one element
+is in the correct position.
+
+Help Gosha write the code for the algorithm.
+
+#### Enter form
+
+The first line contains a natural number n — the length of the array, 2 ≤ n ≤ 1000.
+The second line contains n space-separated integers.
+Each of the numbers does not exceed 1000 in absolute value.
+
+Note that only 2 rows need to be read: the value n and the input array.
+
+#### Expected output
+
+After each pass through the array, on which some elements are swapped, output its intermediate state.
+Thus, if the sorting is completed in k iterations changing the array, then you need to output k lines with n numbers
+each — the elements of the array after each of the iterations.
+If the array was originally sorted, then just output it.
+
+#### Example
+
+Enter:  
+5  
+4 3 9 2 1
+
+Output:  
+3 4 2 1 9  
+3 2 1 4 9  
+2 1 3 4 9  
+1 2 3 4 9
+
+</details>
+
+------
+
+<details>
+<summary>
+<b>Two bicycles (<a href="recursion_sorting/bicycles.py">bicycles.py</a>)</b>
+</summary>
+
+#### Description
+
+Vasya decided to save up money for two identical bicycles - for himself and his sister. Vasya has a piggy bank, into
+which he can add money every day (if, of course, he has such a financial opportunity). In the process of accumulation,
+Vasya does not take money out of the piggy bank.
+
+You have information about the growth of Vasya's savings - how much money Vasya had in the piggy bank on each day.
+
+Your task is to determine, given the cost of the bicycle,
+
+the first day on which Vasya could buy one bike,
+and the first day Vasya could buy two bicycles.
+
+#### Enter form
+
+The first line contains the number of days n during which Vasya's savings were observed. 1 ≤ n ≤ 10(6).
+
+The next line contains n non-negative integers. The numbers are in non-decreasing order. Each of the numbers does not
+exceed 10(6).
+
+The third line contains a positive integer s — the cost of the bike. This number does not exceed 10(6).
+
+#### Expected output
+
+You need to display two numbers — the numbers of days according to the condition of the problem.
+
+If the required amount was not found in the piggy bank, you need to return -1 instead of the day number.
+
+#### Example
+
+Enter:  
+6  
+1 2 4 4 4 4  
+3
+
+Output: 3 -1
+
+</details>
+
+------
+
 
 <!-- MARKDOWN LINKS & IMAGES -->
 

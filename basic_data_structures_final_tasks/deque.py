@@ -1,4 +1,4 @@
-# ID = 81863680
+# ID = 81883692
 from typing import List
 
 
@@ -63,19 +63,21 @@ class Deque:
         return res
 
 
+def call_action(deque: Deque, command) -> None:
+    action = getattr(deque, command[0])
+    if 'pop' in command[0]:
+        print(action())
+    else:
+        action(command[1])
+
+
 def get_commands_output(command_amount: int, max_deque_length: int):
     deque = Deque(max_deque_length)
     for _ in range(command_amount):
         command: List[str] = input().split()
         try:
-            action = getattr(deque, command[0])
-            if 'pop' in command[0]:
-                print(action())
-            else:
-                action(command[1])
-        except EmptyStackError:
-            print('error')
-        except FullStackError:
+            call_action(deque, command)
+        except (EmptyStackError, FullStackError):
             print('error')
 
 
