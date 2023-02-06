@@ -1132,6 +1132,45 @@ Output: 56215
 
 <details>
 <summary>
+<b>Conference (<a href="recursion_sorting/conf.py">conf.py</a>)</b>
+</summary>
+
+#### Description
+
+The IT conference was attended by students from different universities from all over the country. For each student, the
+ID of the university where he studies is known.
+
+Timofey suggested to Rita to find out from which k universities the largest number of students came to the conference.
+
+#### Enter form
+
+The first line gives the number of students in the list — n (1 ≤ n ≤ 15,000).
+
+The second line contains n space-separated integers — the university ID of each student. Each number ranges from 0 to
+10,000.
+
+The third line contains one number k.
+
+#### Expected output
+
+Print space-separated k IDs of universities with the maximum number of participants. They should be sorted in descending
+order of popularity (by the number of guests from a particular university). If more than one university has the same
+number of students, then display their IDs in ascending order.
+
+#### Example
+
+Enter:  
+7  
+1 2 3 1 2 3 4  
+3
+
+Output: 1 2 3
+
+</details>
+
+------
+<details>
+<summary>
 <b>Bubble (<a href="recursion_sorting/bubbles.py">bubbles.py</a>)</b>
 </summary>
 
