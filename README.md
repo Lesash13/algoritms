@@ -946,6 +946,40 @@ Enter: 23
 
 Output: ad ae af bd be bf cd ce cf
 
+</details>
+
+------
+
+<details>
+<summary>
+<b>Subsequence (<a href="recursion_sorting/subsequence.py">subsequence.py</a>)</b>
+</summary>
+
+#### Description
+
+Gosha likes to play the game "Subsequence": given 2 strings, and you need to figure out if the first one is a
+subsequence of the second one. When the lines are long enough, it's very difficult to answer this question just by
+looking at them. Help Gosha write a function that solves this problem.
+
+#### Enter form
+
+The first line contains the string s.
+
+The second contains the string t.
+
+Both strings consist of small Latin letters, string lengths do not exceed 150000. The strings cannot be empty.
+
+#### Expected output
+
+Print True if s is a subsequence of t, otherwise False.
+
+#### Example
+
+Enter:  
+abc  
+ahbgdcu
+
+Output: True
 
 </details>
 
