@@ -1,6 +1,8 @@
 # ID = 81963873
+from typing import List
 
-def broken_search(nums, target) -> int:
+
+def broken_search(nums: List[int], target: int) -> int:
     left: int = 0
     right: int = len(nums) - 1
     while left <= right:
