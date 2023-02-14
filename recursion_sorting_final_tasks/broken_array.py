@@ -21,8 +21,3 @@ def broken_search(nums: List[int], target: int) -> int:
             else:
                 right = mid - 1
     return -1
-
-
-def test():
-    arr = [19, 21, 100, 101, 1, 4, 5, 7, 12]
-    assert broken_search(arr, 5) == 6

@@ -1,8 +1,8 @@
-# ID = 82011367
-from typing import List
+# ID = 82112592
+from typing import List, Tuple
 
 
-def partition(data: List[list], left: int, right: int) -> (List[list], int):
+def partition(data: List[Tuple], left: int, right: int) -> (List[Tuple], int):
     pivot = data[(left + right) // 2]
 
     while left <= right:
@@ -23,11 +23,11 @@ def partition(data: List[list], left: int, right: int) -> (List[list], int):
     return data, right
 
 
-def values_conversion(data) -> List[list]:
-    return [-int(data[1]), int(data[2]), data[0]]
+def values_conversion(name: str, solved: str, errors: str) -> Tuple:
+    return -int(solved), int(errors), name
 
 
-def quick_sort(data: List[list], left: int, right: int):
+def quick_sort(data: List[Tuple], left: int, right: int):
     if left < right:
         data, pivot = partition(data, left, right)
         data = quick_sort(data, left, pivot)
@@ -37,9 +37,9 @@ def quick_sort(data: List[list], left: int, right: int):
 
 def main() -> None:
     amount: int = int(input())
-    data: List[list] = [values_conversion(input().split()) for _ in range(amount)]
+    data: List[Tuple] = [values_conversion(*input().split()) for _ in range(amount)]
     quick_sort(data, 0, amount - 1)
-    print(*(list(zip(*data))[2]), sep="\n")
+    print(*[user[2] for user in data], sep="\n")
 
 
 if __name__ == '__main__':
