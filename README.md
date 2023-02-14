@@ -583,6 +583,33 @@ Return the head of the list that has the desired element removed.
 
 <details>
 <summary>
+<b>Careful mother (<a href="basic_data_structures/mother.py">mother.py</a>)</b>
+</summary>
+
+#### Description
+
+Vasya's mother wants to know what her son plans to do and when. Help her: write a solution function that determines the
+index of the first occurrence of the value passed to it as input in the linked list, if the value is present.
+Attention: in this task it is not necessary to read the input data. You only need to write a function that takes the
+head of the list and the element you are looking for as input, and returns an integer - the index of the found element
+or -1.
+
+#### Enter form
+
+The input function takes the head of a singly linked list and the element to be found. The list length does not exceed
+10000 elements. The list is never empty.
+
+#### Expected output
+
+The function returns the index of the first occurrence of the searched element in the list (indexing starts from zero).
+If the element is not found, -1 should be returned.
+
+</details>
+
+------
+
+<details>
+<summary>
 <b>Stack max(<a href="basic_data_structures/stack_max.py">stack_max.py</a>)</b>
 </summary>
 
@@ -1364,7 +1391,7 @@ The i-th participant is described by three parameters:
 * a unique login (a string of small Latin letters no longer than 20)
 * the number of solved problems Pi
 * fi fine
-Fi and Pi are integers ranging from 0 to 109.
+  Fi and Pi are integers ranging from 0 to 109.
 
 #### Expected output
 
@@ -1378,14 +1405,14 @@ alla 4 100
 gena 6 1000  
 gosha 2 90  
 rita 2 90  
-timofey 4 80  
+timofey 4 80
 
 Output:  
 gena  
 timofey  
 alla  
 gosha  
-rita  
+rita
 
 </details>
 
