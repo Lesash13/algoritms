@@ -13,7 +13,7 @@ if LOCAL:
 def solution(node, elem):
     count = 0
     while elem != count:
-        if node == None:
+        if node is None:
             return -1
         if elem == node.value:
             return count
