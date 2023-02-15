@@ -531,6 +531,55 @@ Output: 2
 
 <details>
 <summary>
+<b>Monitoring (<a href="basic_data_structures/monitoring.py">monitoring.py</a>)</b>
+</summary>
+
+#### Description
+
+Alla received a task related to monitoring the operation of various servers. It is required to understand how long
+certain requests are processed on specific servers. This information must be stored in a matrix, where the column number
+corresponds to the request ID, and the row number corresponds to the server ID. Alla mixed up rows and columns in
+places. It happens to everyone. Help her fix the bug.
+
+There is an m × n matrix. You need to write a function that transposes it.
+
+The transposed matrix is obtained from the original matrix by replacing rows with columns.
+
+For example, for matrix A (on the left), the following matrix will be transposed (on the right):
+
+![monitoring.png](monitoring.png)
+
+#### Enter form
+
+The first line contains the number n — the number of matrix rows.
+The second line contains m — the number of columns, m and n do not exceed 1000. The next n lines contain a matrix. The
+numbers in it do not exceed 1000 in absolute value.
+
+#### Expected output
+
+The function should print the elements of the list, one per line.
+
+#### Example
+
+Enter:  
+4  
+3  
+1 2 3  
+0 2 6  
+7 4 1  
+2 7 0
+
+Output: 
+1 0 7 2  
+2 2 4 7  
+3 6 1 0
+
+</details>
+
+------
+
+<details>
+<summary>
 <b>Task list (<a href="basic_data_structures/task_list.py">task_list.py</a>)</b>
 </summary>
 
@@ -610,6 +659,32 @@ If the element is not found, -1 should be returned.
 
 <details>
 <summary>
+<b>All the opposite (<a href="basic_data_structures/inverse.py">inverse.py</a>)</b>
+</summary>
+
+#### Description
+
+Vasya decided to confuse his mother by doing things in reverse order. His to-do list is now stored in a doubly linked
+list. Write a function that returns a list in reverse order.
+Attention: in this task it is not necessary to read the input data. You only need to write a function that takes the
+head of a doubly linked list as input and returns the head of a reversed list. Below is a description of the structure
+that defines the top of the list.
+
+#### Enter form
+
+The function takes as input a single argument, the head of a doubly linked list.
+The list length does not exceed 1000 elements. The list is never empty.
+
+#### Expected output
+
+The function should return the head of the expanded list.
+
+</details>
+
+------
+
+<details>
+<summary>
 <b>Stack max(<a href="basic_data_structures/stack_max.py">stack_max.py</a>)</b>
 </summary>
 
@@ -632,6 +707,57 @@ If the stack is empty, print "None" when calling the get_max() command, and "err
 
 For each get_max() command, print the result of its execution. If the stack is empty, print "None" for the get_max()
 command. If there is a removal from an empty stack, print "error".
+
+#### Example
+
+Enter:  
+8  
+get_max  
+push 7  
+pop  
+push -2  
+push -1  
+pop  
+get_max  
+get_max
+
+Output:  
+None  
+-2  
+-2
+
+</details>
+
+------
+
+<details>
+<summary>
+<b>Bracket sequence(<a href="basic_data_structures/brackets.py">brackets.py</a>)</b>
+</summary>
+
+#### Description
+
+Here is the task that Timofey offered at the interview to one of the candidates. If you have not come across it yet,
+then you will surely come across it - it is quite popular.
+
+Given a bracket sequence. We need to determine if it is correct.
+
+We will adhere to the following definition:
+
+the empty string is a valid bracket sequence;
+a regular bracket sequence taken in brackets of the same type is a regular bracket sequence;
+a correct bracket sequence with a correct bracket sequence attached to the left or right is also correct.
+The input is a sequence of brackets of three types: [], (), {}.
+Write a function is_correct_bracket_seq that takes a bracket sequence as input and returns True if the sequence is
+correct, False otherwise.
+
+#### Enter form
+
+The input is a single string containing a bracket sequence. The brackets are written in a row, without spaces.
+
+#### Expected output
+
+Print "True" or "False".
 
 #### Example
 
@@ -789,6 +915,42 @@ Need to withdraw Fn.
 Enter:  5
 
 Output:  8
+
+</details>
+
+------
+
+<details>
+<summary>
+<b>Fibonacci modulo(<a href="basic_data_structures/fibonachhi_modul.py">fibonachhi_modul.py</a>)</b>
+</summary>
+
+#### Description
+
+Timofey had a lot of trainees, as many as N (0 ≤ N ≤ 106) people. Each trainee wanted to be better than their
+predecessors, so the i-th trainee made as many commits as the sum of the two previous trainees did. The first two
+interns were less proactive - they made one commit each.
+
+Let Fi be the number of commits made by the i-th trainee (the trainees are numbered from zero). The first two trainees
+made one commit each: F0=F1=1. For all i≥ 2 we have Fi=Fi−1+Fi−2.
+
+Determine how much code the next trainee will write - find the last k digits of the number Fn.
+
+#### Enter form
+
+The first line contains two space-separated integers n (0 ≤ n ≤ 106) and k (1 ≤ k ≤ 8).
+
+#### Expected output
+
+Print a single number, the last k digits of Fn.
+
+If the desired number has less than k digits, then print the number itself without leading zeros.
+
+#### Example
+
+Enter:  10 1
+
+Output:  9
 
 </details>
 
