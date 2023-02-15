@@ -569,7 +569,7 @@ Enter:
 7 4 1  
 2 7 0
 
-Output: 
+Output:
 1 0 7 2  
 2 2 4 7  
 3 6 1 0
@@ -1169,6 +1169,52 @@ abc
 ahbgdcu
 
 Output: True
+
+</details>
+
+------
+
+<details>
+<summary>
+<b>Cookies (<a href="recursion_sorting/cookies.py">cookies.py</a>)</b>
+</summary>
+
+#### Description
+
+Vasya's classmates came to visit. His mother decided to treat the children with cookies.
+
+But not everything is so simple. Cookies can be of different sizes. And every child has a greed factor - the minimum
+size of a cookie that he will take. We need to find out how many guys will be satisfied in the best case, when they
+perform optimally.
+
+Each child can take no more than one cookie.
+
+#### Enter form
+
+The first line contains n — the number of children.
+
+The second contains n space-separated numbers, each of which is the child's greed factor. These are natural numbers not
+exceeding 1000.
+
+The next line contains number m, the number of cookies.
+
+Next — m natural numbers separated by a space — the size of the cookies. The sizes of cookies do not exceed 1000.
+
+Both numbers n and m do not exceed 10000.
+
+#### Expected output
+
+You need to print one number - the number of children who will be satisfied
+
+#### Example
+
+Enter:  
+2  
+1 2  
+3  
+2 1 3
+
+Output: 2
 
 </details>
 
