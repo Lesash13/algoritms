@@ -1102,6 +1102,49 @@ Output: 38
 
 <details>
 <summary>
+<b>Brackets generator (<a href="recursion_sorting/brackets.py">brackets.py</a>)</b>
+</summary>
+
+#### Description
+
+Rita, on behalf of Timothy, puts things in order in the correct bracket sequences (PSP), consisting only of
+parentheses (). To do this, it needs to generate all PSPs of length 2n in alphabetical order — the alphabet consists
+of ( and ) and the opening parenthesis comes before the closing one.
+
+Help Rita — write a program that, given n, will output all the PSPs in the required order.
+
+Let's consider the second example. It is necessary to derive the PSP from four characters. There are only two of them:
+
+(())
+()()
+(()) comes before ()(), since their first character is the same, and the second position of the first PSP is (, which
+comes before ).
+
+#### Enter form
+
+The function takes n as input, an integer from 0 to 10.
+
+#### Expected output
+
+The function should print all possible bracket sequences of the given length in alphabetical (lexicographical) order.
+
+#### Example
+
+Enter: 3
+
+Output:  
+((()))  
+(()())  
+(())()  
+()(())  
+()()()
+
+</details>
+
+------
+
+<details>
+<summary>
 <b>Combinations (<a href="recursion_sorting/combinations.py">combinations.py</a>)</b>
 </summary>
 
@@ -1404,6 +1447,7 @@ Output: 1 2 3
 </details>
 
 ------
+
 <details>
 <summary>
 <b>Bubble (<a href="recursion_sorting/bubbles.py">bubbles.py</a>)</b>
@@ -1456,6 +1500,39 @@ Output:
 
 <details>
 <summary>
+<b>Merge sorting (<a href="recursion_sorting/merge_sorting.py">merge_sorting.py</a>)</b>
+</summary>
+
+#### Description
+
+Gaucher was given the task of writing a beautiful merge sort. Therefore, Gaucher must implement separately the merge
+function and the merge_sort function.
+
+* The merge function takes two sorted arrays, merges them into one sorted array, and returns it. If the required
+  signature
+  is merge(array, left, mid, right), then the first array is given as a half-interval [left,mid) array, and the second -
+  a half-interval [mid,right) array.
+* The merge_sort function takes some subarray to be sorted. A subarray is defined by a half-interval - its beginning and
+  end. The function must sort the subarray passed to it, it does not return anything.
+* The merge_sort function splits a half-interval into two halves and recursively calls the sort separately for each.
+  Then the two sorted arrays are merged into one using merge.
+
+Note that it is the half-intervals that are passed to the function. [begin,end), that is, the right end is not included.
+For example, if you call merge_sort(arr, 0, 4), where arr=[4,5,3,0,1,2], then
+only the first four elements will be sorted, the modified array will look like arr=[0,3,4,5,1,2].
+Implement these two functions.
+
+#### Enter form
+
+The array passed to the function consists of integers not exceeding in absolute value 10(9). The length of the range to
+be sorted does not exceed 10(5).
+
+</details>
+
+------
+
+<details>
+<summary>
 <b>Two bicycles (<a href="recursion_sorting/bicycles.py">bicycles.py</a>)</b>
 </summary>
 
@@ -1495,6 +1572,116 @@ Enter:
 3
 
 Output: 3 -1
+
+</details>
+
+------
+
+<details>
+<summary>
+<b>Flowerbed (<a href="recursion_sorting/flowerbed.py">flowerbed.py</a>)</b>
+</summary>
+
+#### Description
+
+Alla wanted to have narrow flower beds with tulips under her window. On the diagram of the land plot, flower beds are
+indicated simply by horizontal segments lying on one straight line. n gardeners were hired for landscaping. Each of them
+processed some segment on the diagram. The process was not very well organized, sometimes the same segment or part of it
+could be processed by several gardeners at once. Thus, the segments cultivated by two different gardeners merge into
+one. The continuous processed segment will then become a flower bed. It is necessary to determine the boundaries of
+future flower beds.
+Consider examples.
+Example 1:
+Two identical segments [7,8] and [7,8] merge into one, but then they are covered by a segment [6,10]. Thus, we have two
+flower beds with coordinates [2,3] and [6,10].
+Example 2
+Segments [2,3],[3,4] and [3,4] merge into one piece [2,4]. Line segment [5,6] does not merge with anyone, add it to the
+answer.
+
+#### Enter form
+
+327 / 5,000
+Translation results
+Translation result
+The first line contains the number of gardeners n. The number of gardeners does not exceed 100000.In the next n the rows
+contain space-separated coordinates of the flowerbeds in the following format: start end, where start is the
+start coordinate, end is the end coordinate. Both numbers are integers, non-negative and do not exceed 10(7) start is
+strictly less than end.
+
+#### Expected output
+
+You need to display the coordinates of each of the resulting flower beds in separate lines. The data should be displayed
+in sorted order - first the flowerbeds with smaller coordinates, then - with larger ones.
+
+#### Example
+
+Enter:  
+4  
+7 8  
+7 8  
+2 3  
+6 10
+
+Output:   
+2 3  
+6 10
+
+</details>
+
+------
+
+
+<details>
+<summary>
+<b>Partly sorting (<a href="recursion_sorting/part_sorting.py">part_sorting.py</a>)</b>
+</summary>
+
+#### Description
+
+After Gosha learned about merge sort and quick sort, he decided to come up with his own sorting method, which would
+involve dividing the data into parts.
+He named his sorting Partial.
+This method can sort n unique numbers a1, a2, … , an ranging from 0 to n - 1.
+The sorting algorithm consists of three steps:
+
+* Split the original sequence into k blocks B1, …, Bk. Blocks can have different sizes. If block size i is si, then B1
+  ={
+  a1, …, as1 }, B2 = { as1 + 1, … , as1 + s2 } and so on.
+* Sort each of the blocks.
+* Merge blocks - write first the sorted block B1, then B2, ... , Bk
+
+Partial sorting is better than normal sorting if, in the first paragraph, we can break the sequence into a large
+number of blocks. However, not every such partition is suitable. Determine the maximum number of blocks into which the
+original sequence can be divided in order for the sort to work correctly.
+Consider an example: a = [3, 2, 0, 1, 4, 6, 5].
+The minimum size of the first block B1 is 4. If we take only the first two elements, then the sorted sequence will
+start with a two, which is wrong. If you take the first three elements, then the sequence will start from zero, but
+after it immediately go two. The first four elements already guarantee the correct prefix after the blocks are merged.
+The four can be taken as an independent block of one element. The last two elements must be combined into a third block.
+Thus:
+
+B1 = { 3, 2, 0, 1 }
+B2 = {4}
+B3 = { 6, 5 }
+
+In this example, the answer is 3. The maximum number of blocks is three.
+
+#### Enter form
+
+The first line contains n — the number of numbers to sort (n ≤ 1000).
+The next line contains numbers from 0 to n - 1, which must be divided into blocks.
+
+#### Expected output
+
+Output the maximum number of blocks into which data can be divided using the Partial sort method.
+
+#### Example
+
+Enter:  
+5  
+1 0 2 3 4
+
+Output: 4
 
 </details>
 
