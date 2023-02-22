@@ -1812,6 +1812,269 @@ rita
 </details>
 
 ------
+
+## 5. Hash functions
+
+[contest.yandex.ru](https://contest.yandex.ru/contest/24734/problems/)
+
+---
+
+<details>
+<summary>
+<b>Polynomial hash (<a href="hash_functions/polynom_hash.py">polynom_hash.py</a>)</b>
+</summary>
+
+#### Description
+
+Alla really liked the algorithm for calculating a polynomial hash. Help her write a function that computes the hash of
+the string s. In this task, it is necessary to use their codes in the ASCII table as the values of individual
+characters.
+
+The polynomial hash is calculated using the formula:
+![hash.png](hash.png)
+
+#### Enter form
+
+The first line contains a number a (1 ≤ a ≤ 1000) – the basis by which the hash is calculated.
+
+The second line contains a number m (1 ≤ m ≤ 109) which is the modulus.
+
+The third line contains a string s (0 ≤ |s| ≤ 106) consisting of uppercase and lowercase Latin letters.
+
+#### Expected output
+
+Print a non-negative integer - the hash of the given string.
+
+#### Example
+
+Enter:  
+123  
+100003  
+hash
+
+Output:   6080
+
+</details>
+
+------
+
+<details>
+<summary>
+<b>Break me (<a href="hash_functions/broken.py">broken.py</a>)</b>
+</summary>
+
+#### Description
+
+Gosha wrote a program that compares strings solely by their hashes. If the hash is equal, then the strings are equal.
+Timothy saw this disgrace and instructed you to break Gosha's program so that the rest would be disrespectful.
+
+In this problem, you will only need to find two different strings that, for a given hash function, will give the same
+value.
+
+Gosh uses the following hash function:
+![hash.png](hash.png)
+
+for a = 1000 and m = 123 987 123.
+In this task, it is necessary to use their codes in the ASCII table as the values of individual characters.
+
+#### Enter form
+
+In the task, the only test without input
+
+#### Expected output
+
+Send two lines, one per line. Lines can only consist of small Latin letters and should not exceed 1000 characters each.
+You don't need to send a code. The lines from the example cannot be used.
+
+#### Example
+
+Enter:  
+ezhgeljkablzwnvuwqvp  
+gbpdcvkumyfxillgnqrv
+
+</details>
+
+------
+
+<details>
+<summary>
+<b>Hobbies (<a href="hash_functions/circles.py">circles.py</a>)</b>
+</summary>
+
+#### Description
+
+In the company where Timofey works, they take care of the leisure of employees and arrange various circles of interest.
+When someone signs up for a class, the name of the circle is entered into the log.
+
+Based on the entries in the log, make a list of all circles that at least one person goes to.
+
+#### Enter form
+
+The first line contains a natural number n, not exceeding 10 000 - the number of entries in the log.
+
+The next n lines contain the names of circles.
+
+#### Expected output
+
+Print the unique names of the circles, one per line, in the order they appear in the input.
+
+#### Example
+
+Enter:  
+8  
+вышивание крестиком  
+рисование мелками на парте  
+настольный керлинг  
+настольный керлинг  
+кухня африканского племени ужасмай  
+тяжелая атлетика  
+таракановедение  
+таракановедение
+
+Output:  
+вышивание крестиком  
+рисование мелками на парте  
+настольный керлинг  
+кухня африканского племени ужасмай  
+тяжелая атлетика  
+таракановедение
+
+</details>
+
+------
+
+<details>
+<summary>
+<b>Substrings (<a href="hash_functions/substrings.py">substrings.py</a>)</b>
+</summary>
+
+#### Description
+
+The input is a string. It is necessary to determine the length of the largest substring that does not contain repeated
+characters.
+
+#### Enter form
+
+One line consisting of lowercase Latin letters. The string length does not exceed 10,000.
+
+#### Expected output
+
+Output a natural number — the answer to the problem.
+
+#### Example
+
+Enter:  abcabcbb  
+Output:  3
+
+</details>
+
+------
+
+<details>
+<summary>
+<b>Anagram group (<a href="hash_functions/anagram.py">anagram.py</a>)</b>
+</summary>
+
+#### Description
+
+Vasya decided to get rid of problems with pronunciation and become a singer. He turned to a speech pathologist for help.
+He advised Vasya to perform an exercise called anagram grouping. As a preparatory step, you need to choose from a
+variety of anagram strings.
+
+Anagrams are strings that are obtained from each other by permuting characters. For example, the strings "SILENT" and "
+LISTEN" are anagrams.
+
+Help Vasya find anagrams.
+
+#### Enter form
+
+The first line contains a number n — the number of lines.
+
+Then n lines are written into the line separated by a space.
+
+n does not exceed 6000. The length of each line is no more than 100 characters.
+
+#### Expected output
+
+You need to output in sorted order the indexes of strings that are anagrams.
+
+Each index group should be displayed on a separate line. Indexes within the same group must be sorted in ascending
+order. Groups among themselves must be sorted in ascending order of the first index.
+
+Please note that an anagram group can also consist of one line. For example, if there are no anagrams in the original
+set, then you need to output n groups, each of which consists of one index.
+
+#### Example
+
+Enter:  
+6  
+tan eat tea ate nat bat
+
+Output:  
+0 4  
+1 2 3  
+5
+
+</details>
+
+------
+
+## 6. Trees
+
+[contest.yandex.ru](https://contest.yandex.ru/contest/26207/problems/)
+
+---
+
+<details>
+<summary>
+<b>Lamps (<a href="trees/lamps.py">lamps.py</a>)</b>
+</summary>
+
+#### Description
+
+Gosha hung a garland on the wall in the form of a binary tree, in the nodes of which there are light bulbs. Each light
+bulb has its own brightness. The light bulb brightness level corresponds to the number located in the tree node. Help
+Gosha find the brightest bulb in the garland, that is, the one with the highest brightness.
+
+![lamps.png](lamps.png)
+
+#### Enter form
+
+The input is the root of the tree.
+
+#### Expected output
+
+The function should return the maximum brightness value in the tree node.
+
+</details>
+
+------
+
+<details>
+<summary>
+<b>Tree twins (<a href="trees/twins.py">twins.py</a>)</b>
+</summary>
+
+#### Description
+
+Gaucher was given two trees for his birthday. Timothy said that they are exactly the same. But, according to Gosha, they
+are different.
+Help resolve this philosophical debate!
+
+![twins.png](twins.png)
+
+#### Enter form
+
+The roots of two trees are fed into the entrance.
+
+#### Expected output
+
+The function should return True if the trees are twins. Otherwise - False.
+
+</details>
+
+------
+
 <!-- MARKDOWN LINKS & IMAGES -->
 
 [dependency-shield]: https://img.shields.io/badge/Dependency_Graph-darkgreen?style=for-the-badge
