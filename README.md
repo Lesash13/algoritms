@@ -1815,7 +1815,7 @@ rita
 
 ## 5. Hash functions
 
-[contest.yandex.ru](https://contest.yandex.ru/contest/24734/problems/)
+[contest.yandex.ru](https://contest.yandex.ru/contest/26205/problems/)
 
 ---
 
