@@ -2052,7 +2052,56 @@ The function should return the maximum brightness value in the tree node.
 
 <details>
 <summary>
-<b>Tree twins (<a href="trees/twins.py">twins.py</a>)</b>
+<b>Balanced tree (<a href="trees/balanced.py">balanced.py</a>)</b>
+</summary>
+
+#### Description
+
+Gosha really enjoyed listening to Timothy's story about trees. Especially the part about balanced trees. He decided to
+write a function that determines if the tree is balanced.
+A tree is considered balanced if the left and right subtrees of each vertex differ in height by no more than one.
+![balanced.png](balanced.png)
+
+#### Enter form
+
+The input is the root of the tree.
+
+#### Expected output
+
+The function should return True if the tree is balanced according to the criteria from the condition, otherwise it
+should return False.
+
+</details>
+
+------
+
+<details>
+<summary>
+<b>Anagram tree (<a href="trees/anagram.py">anagram.py</a>)</b>
+</summary>
+
+#### Description
+
+Gosha and Alla play the game "Amazing Trees". Help the children determine if the tree they see is an anagram tree?
+A tree is called an anagram if it is symmetrical about its center.
+![anagram.png](anagram.png)
+
+#### Enter form
+
+The input is the root of the tree.
+
+#### Expected output
+
+The function should return True if the tree is anagram, otherwise it
+should return False.
+
+</details>
+
+------
+
+<details>
+<summary>
+<b>Twins tree (<a href="trees/twins.py">twins.py</a>)</b>
 </summary>
 
 #### Description
@@ -2070,6 +2119,88 @@ The roots of two trees are fed into the entrance.
 #### Expected output
 
 The function should return True if the trees are twins. Otherwise - False.
+
+</details>
+
+------
+
+<details>
+<summary>
+<b>Search tree (<a href="trees/search.py">search.py</a>)</b>
+</summary>
+
+#### Description
+
+Gosha understood what a search tree is and wanted to write a function that determines if a given tree is a search tree.
+Values in the left subtree must be strictly less than, in the right - strictly greater than the value in the node.
+Help Gosha with the implementation of this algorithm.
+
+![search.png](search.png)
+
+#### Enter form
+
+The input is the root of the tree.
+
+#### Expected output
+
+The function should return True if the tree is a search tree. Otherwise - False.
+
+</details>
+
+------
+
+<details>
+<summary>
+<b>Max depth (<a href="trees/max_depth.py">max_depth.py</a>)</b>
+</summary>
+
+#### Description
+
+Alla wants to visit different islands of the Algosa archipelago. She made a map. The map is presented as a tree: the
+root represents the center of the archipelago, the nodes represent other islands. And the leaves are distant islands
+that Allah wants to get to.
+Help Alla determine the maximum number of islands she needs to go through to make one trip from her starting island to
+her destination, including her start and end points.
+
+![max_depth.png](max_depth.png)
+
+#### Enter form
+
+The input is the root of the tree.
+
+#### Expected output
+
+The function must return a number equal to the maximum number of islands in the path (including the start and end
+points).
+
+</details>
+
+------
+
+<details>
+<summary>
+<b>Different search trees (<a href="trees/different_trees.py">different_trees.py</a>)</b>
+</summary>
+
+#### Description
+
+The children became interested in how many different search trees can be, containing in their nodes all unique numbers
+from 1 to n. Help them find the answer to this question.
+
+#### Enter form
+
+The single line contains the number n. It does not exceed 20.
+
+#### Expected output
+
+You need to print a number equal to the number of different search trees, the nodes of which can contain numbers from 1
+to n inclusive.
+
+#### Example
+
+Enter: 4
+
+Output: 14
 
 </details>
 

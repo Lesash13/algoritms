@@ -14,6 +14,7 @@ def solution(root1, root2):
 
     return root1.value == root2.value and solution(root1.left, root2.left) and solution(root1.right, root2.right)
 
+
 def test():
     node1 = Node(1, None, None)
     node2 = Node(2, None, None)
