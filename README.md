@@ -1898,6 +1898,69 @@ gbpdcvkumyfxillgnqrv
 
 <details>
 <summary>
+<b>Prefix hash (<a href="hash_functions/prefix_hash.py">prefix_hash.py</a>)</b>
+</summary>
+
+#### Description
+
+Alla did not stop there - now she wants to learn how to quickly calculate the hashes of arbitrary substrings of a given
+string. Help her!
+
+The input receives requests to calculate the hashes of different substrings. Each request should be answered in O(1). It
+is permissible at the beginning of the program to make a pre-calculation for further work with the string.
+
+Recall that the polynomial hash is calculated by the formula
+
+![hash.png](hash.png)
+
+In this task, it is necessary to use their codes in the ASCII table as the values of individual characters.
+
+for a = 1000 and m = 123 987 123.
+In this task, it is necessary to use their codes in the ASCII table as the values of individual characters.
+
+#### Enter form
+
+The first line contains a number a (1 ≤ a ≤ 1000) – the basis by which the hash is calculated. The second line contains
+a number m (1 ≤ m ≤ 107) which is the modulus. The third line contains a string s (0 ≤ |s| ≤ 106) consisting of
+uppercase and lowercase Latin letters.
+
+The fourth line contains the number of requests t, a natural number from 1 to 105. Each of the next t lines contains two
+space-separated numbers l and r, the indexes of the beginning and end of the next substring. (1 ≤ l ≤ r ≤ |s|).
+
+#### Expected output
+
+For each query print the hash of the substring given in the query on a separate line.
+
+#### Example
+
+Enter:  
+1000  
+1000009  
+abcdefgh  
+7  
+1 1  
+1 5  
+2 3  
+3 4  
+4 4  
+1 8  
+5 8
+
+Output:  
+97  
+225076  
+98099  
+99100  
+100  
+436420  
+193195
+
+</details>
+
+------
+
+<details>
+<summary>
 <b>Hobbies (<a href="hash_functions/circles.py">circles.py</a>)</b>
 </summary>
 
